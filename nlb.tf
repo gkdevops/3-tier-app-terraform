@@ -19,5 +19,8 @@ resource "aws_lb_listener" "public_http" {
   port              = 80
   protocol          = "TCP"
 
-  default_action { type="forward" target_group_arn = aws_lb_target_group.web_tg.arn }
+  default_action { 
+    type="forward"
+    target_group_arn = aws_lb_target_group.web_tg.arn
+  }
 }
