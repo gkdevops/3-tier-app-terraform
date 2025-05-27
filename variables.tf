@@ -10,10 +10,10 @@ variable "private_app_subnet_cidrs" { type = list(string) }
 
 # Misc
 variable "project_name" { type = string default = "tier3app" }
-variable "key_name"     { type = string }                # existing EC2 KeyPair
+variable "key_name"     { type = string } 
 variable "app_port"     { type = number  default = 3000 }
-variable "hosted_zone_id" { type = string }              # public hosted zone
-variable "domain_name"    { type = string }              # e.g. app.example.com
+variable "hosted_zone_id" { type = string } 
+variable "domain_name"    { type = string } 
 
 # RDS
 variable "db_username" { type = string sensitive = true }
