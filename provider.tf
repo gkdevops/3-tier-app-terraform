@@ -5,4 +5,7 @@ terraform {
   required_version = ">= 1.0"
 }
 
-provider "aws" {}
+provider "aws" {
+  region  = "us-weast-1"
+  profile = "default"
+}
